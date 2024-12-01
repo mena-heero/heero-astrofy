@@ -5,13 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://mena-heero.github.io',
-  base: '/heero-astrofy',
-  integrations: [mdx(), sitemap(), tailwind(), image(
-    {
-      serviceEntryPoint: '@astrojs/image/sharp',
-      cacheDir: "./.cache/image",
-      logLevel: 'debug',
-    }
-  )]
+  site: 'https://astrofy-template.netlify.app',
+  integrations: [mdx(), sitemap(), tailwind()]
 });
